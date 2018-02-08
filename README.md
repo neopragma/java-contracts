@@ -6,6 +6,8 @@ A simple facility to support Design by Contract in Java.
 
 There's a nice explanation [on the Eiffel website](https://www.eiffel.com/values/design-by-contract/introduction/), so there's no need to reiterate it here. 
 
+## Design rationale
+
 Most implementations of libraries to support contracts appear to treat them as a separate concern from the application logic. Implementations often try to separate the contract functionality from the application source in some way. 
 
 In Java implementations, this may involve pre-processing custom javadoc comments, using aspects, or using annotations. 
