@@ -36,7 +36,7 @@ if (capacity < 1) throw new IllegalArgumentException();
 is understandable, but a statement like 
 
 ```java
-Contract.require(capacity < 1, "Capacity must be greater than zero");
+Contract.require(capacity > 0, "Capacity must be greater than zero");
 
 ```
 
