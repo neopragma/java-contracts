@@ -12,7 +12,7 @@ Most implementations of libraries to support contracts appear to treat them as a
 
 In Java implementations, this may involve pre-processing custom javadoc comments, using aspects, or using annotations. 
 
-These problems may stem from a common misconception that Design by Contract is a testing technique. This has led people to build in functionality to enable and disable the contract-processing logic.
+These problems may stem from a common misconception that Design by Contract is a testing technique. This has led people to build in functionality to enable and disable the contract-processing logic so that it can be omitted when the code is pushed to production. Some implementations even require the code to be compiled with debugging turned on.
 
 In fact, the intent is to enforce contracts in production. Implementations that go to great lengths to abstract the contract handling code from the application code only succeed in adding arbitrary complexity to the code base, the test suite, and the build configuration. It's no wonder that people have stopped using pretty much all of the implementations that have come and gone over the years. 
 
